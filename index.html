@@ -34,9 +34,37 @@ body{
     padding:20px;
 }
 
-img{
+iimg{
     width:100%;
 }
+
+.buy{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:linear-gradient(90deg,#ff0000,#ff8800);
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    font-size:34px;
+    font-weight:bold;
+    padding:20px 0;
+    z-index:9999;
+    box-shadow:0 0 20px rgba(255,0,0,.6);
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.2;}
+    100%{opacity:1;}
+}
+
+.blink{
+    animation:blink 1s infinite;
+    margin-right:10px;
+}
+
 </style>
 </head>
 
